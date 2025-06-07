@@ -62,7 +62,6 @@ Figure 9 (Adit Deshpande)
 The filter will move one  position right until it hits the far right side then start again on the left one position lower than where it last checked. The process of sliding and multiplication is called Convolved Feature. The size of the aforementioned convolved feature is based on 3 parameters. The depth which determines the number of filters in use. Stride is the number of pixels which are slid over in the input matrix. Lastly, is zero padding, which is when you pad the input matrix with zeros around the border so the filter can be applied to bordering elements. Zero padding is also  used to control the size of the feature map. Wide vs narrow convolution is just having vs not having zero padding. CNN’s have other features. Determining the dimensions after one pass through a convolutional layer can be determined by a simple formula.  (AISHWARYA SINGH, 2020)
 
  ![image](https://github.com/user-attachments/assets/02bc93b6-b781-48e7-844e-466e6b68368f)
-
 Figure 10 (AISHWARYA SINGH, 2020)
 Another small feature which may be used is the rectified linear units activation function which simply is just when a negative number is swapped with a zero. “This helps the CNN stay mathematically healthy by keeping learned values from getting stuck near 0 or blowing up toward infinity”(e2eML school). 
 
@@ -82,7 +81,6 @@ Additional notes diving into CNN’s
 Application for Neural Networks for facial recognition has vast options at the current moment. CNN’s seem to be the best overall approach but it has its downsides. One big one being “they lack a very important property of incorporating any prior information [ 6 ]. When applied to expression analysis, it seems insufficient to well describe expressional images as variations such as identities add redundant noises to these features.”  Xie, S., & Hu, H. (2017, January 24). This can be made up for with the concept of TI-pooling. Ti pooling is the process of making a CNN transformation invariant. At a basic level based on transformations such as rotations, scale changes, shifts or illumination changes the output will not depend on whether or not the input was transformed. This is essentially done by transforming the original image to a set of transformations. Every transformation is a parallel instance of a partial siamese network. Each instance only having convolutional and subsampling layers.
 
 ![image](https://github.com/user-attachments/assets/509c8076-8379-4472-80e0-81122636f0be)
-
 Figure 13 (Dlaptev)
 The instances are passed until reaching the fully connected layer similar to n ormal CNN. The other important to solving the aforementioned issue is that most CNN’s use one channel. A solution discussed in Siyue Xie’s article was the use of siamese networks which uses multiple channels to enhance the power of discriminative features. These channels also use the above-mentioned Ti-pooling. To summarize, “images from the same transformation set are set as the inputs of identical parallel channels. Then, each image passes through the convolutional module and yields a concatenate feature vector. Weight sharing is implemented among all the channels. TI-pooling is implemented across all these channels” Xie, S., & Hu, H. (2017, January 24)(Dlaptev)Laptev, D., Savinov, N., Buhmann, J., & Pollefeys, M. (2016, September 22)
 
@@ -95,7 +93,6 @@ Figure 15 Kim, J. (2017)
 gCNN are similar to standard CNN’s with the exception that they are involved with surface data. gCNN architecture is made up of input data layer, mesh convolutional layers with data reshaping, batch normalization layers, ReLU layers, mesh pooling layers and lastly fully connected layer. This goes deeper than an experiment will likely go, but it is a possible avenue. Kim, J. (2017) Xie, S., & Hu, H. (2017, January 24 )
 
 ![image](https://github.com/user-attachments/assets/e42ef59d-ab1e-45c4-8d09-871a64f4f2ae)
-
 Figure 16 Seong, S. (2018, June 12)
 Coming down to actually training a convolutional neural network is commonly done within a python framework. Usually something such as Google colab or jupyter notebook. A large dataset is also required for the learning process, the larger the better. Operating a cNN does not require the large dataset but the neural network will have a larger accuracy when it comes to facial recognition the larger the dataset. Seong, S. (2018, June 12)
 
