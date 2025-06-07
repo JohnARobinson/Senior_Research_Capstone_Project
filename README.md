@@ -1,5 +1,5 @@
-# Senior_Research_Capstone_Project
-Facial_Regcognition_CNN
+# Facial_Regcognition_CNN
+John Robinson Shippensburg Capstone Project
 
 John Robinson
 Mentor: Dr Girard, Dr Armstrong
